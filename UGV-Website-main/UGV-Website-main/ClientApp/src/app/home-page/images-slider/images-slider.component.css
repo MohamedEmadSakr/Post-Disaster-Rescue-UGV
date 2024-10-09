@@ -1,0 +1,26 @@
+img {
+  width: 100%;
+  height: 90.8vh;
+}
+
+
+.slider {
+  width: 100%;
+  height: 90.8vh;
+}
+
+.headeraboutus {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.headeraboutus h1,
+  .contactus {
+    color: white;
+    padding: 20px;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-weight: 500;
+    line-height: 0.5;
+  }

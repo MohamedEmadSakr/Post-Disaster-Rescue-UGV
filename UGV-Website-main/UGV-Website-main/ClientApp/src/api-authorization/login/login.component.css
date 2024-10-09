@@ -1,0 +1,31 @@
+.containerDiv {
+  height: 90.8vh;
+  width: 100vw;
+  padding: 0;
+}
+
+svg {
+  position: absolute;
+  width: 400px;
+  height: 160px;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+}
+
+  svg #plug,
+  svg #socket {
+    fill: #FDB515;
+  }
+
+  svg #loop-normal {
+    fill: none;
+    stroke: #FDB515;
+    stroke-width: 12;
+  }
+
+  svg #loop-offset {
+    display: none;
+  }

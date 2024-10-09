@@ -1,0 +1,52 @@
+
+<div class="container-fluid bg-dark">
+  <div class="row">
+    <div class="col-6">
+      <h3 style="text-align:center; color: white;float:left;display:inline;">View Live camera stream</h3>
+      <button class="view-summary-btn orange-btn" data-bs-toggle="modal" data-bs-target="#summaryModal">Summary</button>
+      <button class="view-summary-btn orange-btn" (click)="pinLocation()">Pin location</button>
+      <app-live-stream></app-live-stream>
+    </div>
+    <div class="col-6" style="padding-top: 4%;">
+      <div #mapContainer style="height: 500px;"></div>
+      
+    </div>
+  </div>
+
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="summaryModal" tabindex="-1" aria-labelledby="summaryModal" aria-hidden="true">
+  <div class="modal-dialog modal-xl">
+    <div class="modal-content bg-dark">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="summaryModalLabel" style="color: white;">
+          UGV missions summary
+        </h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" style="color: white;"></button>
+      </div>
+      <div class="modal-body" style="padding: 0px;">
+          <table class="table table-hover table-dark">
+            <thead>
+              <tr>
+                <th scope="col">Mission id</th>
+                <th scope="col">Mission Name</th>
+                <th scope="col">Number of survivors</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let mission of missions">
+                <th scope="row">{{ mission.missionId }}</th>
+                <td>{{ mission.missionName }}</td>
+                <td>{{ mission.noOfSurvivors }}</td>
+              </tr>
+            </tbody>
+          </table>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary orange-btn">Add mission</button>
+      </div>
+    </div>
+  </div>
+</div>

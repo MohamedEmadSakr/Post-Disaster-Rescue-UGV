@@ -1,0 +1,22 @@
+table{
+    margin-bottom: 0px;
+}
+
+
+.view-summary-btn {
+  color: #fff;
+  border: none;
+  border-radius: 30px;
+  opacity: 1;
+  float: right;
+  width: 25%;
+  height: 10%;
+  font-size: x-large;
+  margin-left:15px;
+  margin-bottom:5px;
+}
+
+.orange-btn {
+  background-color: #ff7d03;
+  border-color: #ff7d03;
+}

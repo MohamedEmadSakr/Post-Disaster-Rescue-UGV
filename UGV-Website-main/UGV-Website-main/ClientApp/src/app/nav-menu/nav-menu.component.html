@@ -1,0 +1,45 @@
+<header class="sticky-top">
+  <nav
+    class="navbar navbar-expand-sm navbar-toggleable-sm navbar-dark bg-dark box-shadow"
+  >
+    <div class="container">
+      <a class="navbar-brand" [routerLink]="['/']">UGV</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target=".navbar-collapse"
+        aria-label="Toggle navigation"
+        [attr.aria-expanded]="isExpanded"
+        (click)="toggle()"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div
+        class="navbar-collapse collapse d-sm-inline-flex"
+        [ngClass]="{ show: isExpanded }"
+      >
+        <ul class="navbar-nav flex-grow">
+          <li class="nav-item"
+              [routerLinkActive]="['link-active']"
+              [routerLinkActiveOptions]="{ exact: true }">
+            <a class="nav-link" href="#slider">Home</a>
+          </li>
+          <li class="nav-item" [routerLinkActive]="['link-active']">
+            <a class="nav-link" href="#AboutUs">About Us</a>
+          </li>
+          <li class="nav-item" [routerLinkActive]="['link-active']">
+            <a class="nav-link" href="#OurBranches">Our Missions</a>
+          </li>
+          <li class="nav-item" [routerLinkActive]="['link-active']">
+            <a class="nav-link" href="#ContactUs">Contact US</a>
+          </li>
+        </ul>
+      </div>
+      <div style="float:right">
+        <app-login-menu style="float:right"></app-login-menu>
+      </div>
+    </div>
+  </nav>
+</header>
+

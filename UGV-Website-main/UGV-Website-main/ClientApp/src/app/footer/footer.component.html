@@ -1,0 +1,86 @@
+<footer class="bg-dark">
+  <section id="contact">
+
+    <h1 class="section-header">Contact Us</h1>
+
+    <div class="contact-wrapper">
+
+      <!-- Left contact page -->
+
+      <form
+            (ngSubmit)="onSubmit()"
+            #myForm="ngForm"
+            id="contact-form" class="form-horizontal" role="form">
+
+        <div class="form-group">
+          <div class="col-sm-12">
+            <input type="text" class="form-control" id="name" placeholder="NAME" [(ngModel)]="name" name="name" value="" required>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <div class="col-sm-12">
+            <input type="email" class="form-control" id="email" placeholder="EMAIL" [(ngModel)]="email" name="email" value="" required>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <textarea class="form-control" rows="10" placeholder="MESSAGE" [(ngModel)]="message" name="message" required></textarea>
+        </div>
+
+        <button class="btn orange-btn send-button" id="submit" type="submit" value="SEND">
+          <div class="alt-send-button">
+            <span>SEND</span> <i class="fa fa-paper-plane" style="margin-left: 5%;"></i>
+          </div>
+        </button>
+
+      </form>
+
+      <!-- Left contact page -->
+
+      <div class="direct-contact-container">
+
+        <ul class="contact-list">
+          <li class="list-item"><i class="fa fa-map-marker fa-2x"><span class="contact-text place"><a target="_blank" href="https://goo.gl/maps/CAMF3VBUjbuQHX2i9">Cairo, Egypt</a></span></i></li>
+
+          <li class="list-item"><i class="fa fa-phone fa-2x"><span class="contact-text phone"><a href="tel:24112219" title="Give me a call">24112219</a></span></i></li>
+
+          <li class="list-item"><i class="fa fa-envelope fa-2x"><span class="contact-text gmail"><a href="mailto:ugv@aastmt.edu" title="Send me an email">ugv@aastmt.edu</a></span></i></li>
+
+        </ul>
+
+        <hr>
+        <ul class="social-media-list">
+          <li>
+            <a href="#" target="_blank" class="contact-icon">
+              <i class="fa fa-github" aria-hidden="true"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#" target="_blank" class="contact-icon">
+              <i class="fa fa-codepen" aria-hidden="true"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#" target="_blank" class="contact-icon">
+              <i class="fa fa-twitter" aria-hidden="true"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#" target="_blank" class="contact-icon">
+              <i class="fa fa-instagram" aria-hidden="true"></i>
+            </a>
+          </li>
+        </ul>
+        <hr>
+
+        <div class="copyright">&copy; ALL OF THE RIGHTS RESERVED</div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+</footer>

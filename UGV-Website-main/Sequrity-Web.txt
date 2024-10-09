@@ -1,0 +1,3 @@
+1-https://172.20.10.10:8000/stream.mjpg
+2-https://172.20.10.10:5000/coordinates
+python detect.py --source https://172.20.10.10:8000/stream.mjpg

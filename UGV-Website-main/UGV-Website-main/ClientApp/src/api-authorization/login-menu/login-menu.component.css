@@ -1,0 +1,17 @@
+span {
+  color: rgb(255, 125, 3);
+}
+
+.navbar-nav a {
+  font-size: 1.2em
+}
+
+.important {
+  color: white;
+  border-color: rgb(255, 125, 3);
+  font-size: 1.2em
+}
+
+.important:hover {
+  background-color: rgb(255, 125, 3);
+}

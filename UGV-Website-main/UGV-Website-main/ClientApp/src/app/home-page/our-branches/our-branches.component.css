@@ -1,0 +1,9 @@
+.headeraboutus {
+  text-align: center;
+}
+
+  .headeraboutus > h1 {
+    padding-top: 1%;
+    margin-bottom: 0px;
+    color: white;
+  }
