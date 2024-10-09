@@ -1,7 +1,7 @@
-# Autonomous Car project
+# Remote Car project
 
 
-this project is for generating a model of an autonomous car in a Udacity's car simulation using convolutional neural networks
+This project is for Controlling UGV remotly Using PS4 controller 
 
 
 # Motivation
